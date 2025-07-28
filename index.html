@@ -1,18 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!-- This is head element <head> </head> -->
-    <head>
-        <!-- All the tags here is metadata tags -->
-        <meta charset="UTF-8">
-        <meta name="author" content="Hoang">
-        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
-        <title>First Web Page</title>
-        <link rel="icon" href="img3.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text/css">
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-        <p>This is my first web page</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hoang">
+    <meta name="description" content="This page contain text basic in HTML">
+    <title>My second web page</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="shortcut icon" href="img3.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <hr>
+        <h1>My Goals for the Year</h1>
+
+        <hr>
+
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a vacation</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <!-- section is a sematic section -->
+    <!-- id is a attribute -->
+
+    <main>
+        <article id="html">
+            <h3>I'm ready to learn HTML</h3>
+            <p>This is my first web page.</p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="img/a.jpg" alt="Is just a img name a.jpg" title="May a picture of a person are wondering."
+                    width="200" height="200">
+                <figure>
+                    <figcaption>
+                        An emxample of HTML5 Code
+                    </figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
+
+            <section>
+                <h3>My daily schedule</h3>
+                <p>Let me tell you how: </p>
+                <ol>
+                    <li>...I learn more about web dev.</li>
+                    <li>...I plan out my schedule</li>
+                    <!-- Title is a Attribute -->
+                    <li>...I use resources from <abbr title="Mozilla Developer Network"><a
+                                href="https://www.youtube.com/watch?v=mJgBOIoGihA&list=PL0Zuz27SZ-6M1Uopt6_VL3gf3cpMnwavm">Dave
+                                Gray</a></abbr></li>
+                </ol>
+                <aside>
+                    <!-- Can use this as a question -->
+                    <details>
+                        <summary>Guess the number of <mark>hours I code</mark> per day</summary>
+                        <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3
+                                hours</time> hourse every morning</p>
+                    </details>
+                </aside>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="vacation">
+            <h2>I am also planning a vacation</h2>
+            <!-- Tag are inside another tag like <em> called inline level element -->
+            <p>I've been working hard and <em>really need a get away.</em></p>
+            <p>I live in <abbr title="A province from Vietnam">Hanoi</abbr> so I want visit a beach.</p>
+
+            <section>
+                <h3>Place I'd like to visit</h3>
+                <p>I've heard good things about the Caribbean</p>
+                <figure>
+                    <img src="img/b.jpg" alt="An img name b.jpg" title="Frieren picture" width="200" height="200"
+                        loading="lazy">
+                    <figcaption>
+                        Frieren lay on the ground
+                    </figcaption>
+                </figure>
+                <p>I've heard good things about going here:</p>
+                <address>
+                    West of Hanoi in HoaiDuc District - Lideco<br>
+                    Tan Uyen - Ho Chi Minh<br>
+                </address>
+            </section>
+            <section>
+                <h3>Place I want to Avoid</h3>
+                <p>Anywhere crowed. <strong>No way!</strong></p>
+            </section>
+        </article>
+
+        <hr>
+
+        <figure>
+            <img src="img/img1.jpg" alt="An img name img1.jpg" title="hehe" width="200" height="200" loading="lazy">
+            <figcaption>Just an img hehe.</figcaption>
+        </figure>
+        <h3>An example for Ordered list</h3>
+        <!-- Ordered list -->
+        <ol>
+            <li>I learn more about web dev</li>
+            <li>I plan out my schedule</li>
+            <li>I use resources from Dave Gray</li>
+        </ol>
+
+        <!-- Unordered List -->
+        <h3>Example for Unordered list</h3>
+        <ul>
+            <li>I've hear good things about here</li>
+            <li>Where?</li>
+            <li>I don't know</li>
+        </ul>
+
+        <h3>Example for Description list</h3>
+        <!-- Description list -->
+        <dl>
+            <!-- Description term -->
+            <dt>North Pole</dt>
+            <!-- Description Detail -->
+            <dd>I hear this is <strong>cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also <strong>cold</strong></dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also <strong>cold</strong></dd>
+        </dl>
+
+        <hr>
+
+        <ul>
+            <!-- download link -->
+            <li>Download an <a href="img3.jpg" download>Web Favicon</a></li>
+
+            <li>
+                <!-- email link -->
+                Contact me at <a href="mailto:random@email.com">My email address</a>
+            </li>
+
+            <!-- telephone link -->
+            <li>
+                Dial <a href="tel:+123456789">My phone number</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/" target="_blank">Google</a>
+            </li>
+        </ul>
+
+
+    </main>
+
+    <hr>
+    <footer>
+        <p>
+            <!-- Entities -->
+            &lt;&lt;&lt; &copy; <a href="about.html">hihi</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="/">Back to Home</a>
+        </p>
+    </footer>
+
+
+    <!-- Link text rule -->
+    <!-- 
+        - avoid print the full web address
+        - avoid <p>links to</p> cuz everyone know it is a link
+        - keep link text SHORT. The exacly topic.
+        - no link say <a>click here</a>
+     -->
+
+</body>
+
 </html>
