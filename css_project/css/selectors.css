@@ -1,0 +1,53 @@
+/* property: property value */
+/* color là property */
+/* purple là property value */
+/* color: purple; là declaration */
+/* property nghĩa là thuộc tính */
+
+/* priority selects */
+/* #id selector > .class selector > element selector */
+
+/* this selector select all element not everything */
+/* * {
+    font-family: monospace;
+} */
+
+html {
+    font-size: 30px;
+}
+
+body {
+    font-size: 22px;
+}
+
+main {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+/* !important cho độ ưu tiên cao hơn */
+p {
+    color:purple !important;
+}
+
+p {
+    color: red;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+.gray {
+    color: gray;
+}
+
