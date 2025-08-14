@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+    DEFINATION
+
+    Typography is the way that text
+    is arranged and presented
+
+*/
+
+/*
+    - rem: Root EM
+    - là kích thước phần tử gốc html
+
+    nếu
+    html {
+        font-size: 16px;
+    }
+    thì mặc định tất cả các rem sẽ là 16px
+
+    em: kế thừa từ cha
+    - như font-size từ body là 16px thì:
+    - p con của body
+    p {
+        font-size: 1.5em; sẽ là 1.5 * 16px = 24px
+    }
+
+    - child con của p
+    .child {
+        font-size: 2em; sẽ là 2 * 24px = 48px
+    }
+
+    - % tương tự theo mặc định của cha
+    100% = 16px
+    150% = 24px
+*/
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto';
+}
+
+p {
+    /* text-transform: lowercase; */
+    /* text-align: justify; */
+    /* text-indent: 2em; */
+
+    line-height: 1.5;
+    /* letter-spacing: 0.1em; */
+    /* word-spacing: 0.1em; */
+
+    /* FONT PROPERTIES */
+    /* font-weight: bold; */
+    /* font-style: italic; */
+}
+
+
+/* Không bị ảnh hưởng bởi body nên phải cho kế thừa */
+input, button {
+    font: inherit; /* kế thừa các font-size, color của body*/ 
+}
