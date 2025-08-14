@@ -1,0 +1,50 @@
+/* Color in CSS */
+/* units: px, rem,... */
+
+
+/* Box Model */
+/* 
+- Margin: phần cam, tất cả khoảng trống bên ngoài border của elements
+- Border: đường viền của padding
+- Padding: phần xanh lá, bọc phần content
+- Content: phần xanh biển
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 10px double red;
+    font-size: 1.5rem;
+
+    /* margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    */
+    /* Cách khác */
+    margin: 1.5em;
+
+    /* padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; */
+    padding: 1.5em;
+
+    outline: 5px solid purple;
+    outline-offset: -20px;
+}
+
+.circle {
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    margin: 3rem auto;
+    outline: 5px solid red;
+    border-radius: 50px;
+    outline-offset: 0.25rem;
+}
+
