@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* STYLING LINKS */
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto';
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+}
+
+/* PSEUDO CLASS */
+/* đã bấm vào link 1 lần */
+a:visited {
+    color: purple;
+}
+
+/* di chuột vào, bấm tab tới link */
+a:hover, a:focus {
+    color: dodgerblue;
+    opacity: 0.1;
+    background-color: gold;
+}
+
+/* giữ chuột vào link */
+a:active {
+    color: green;
+}
