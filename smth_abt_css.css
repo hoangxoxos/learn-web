@@ -1,0 +1,155 @@
+/* I. HIỂN THỊ & BỐ CỤC */
+display: block;        /* Chiếm toàn bộ chiều ngang, xuống dòng mới */
+display: inline;       /* Nằm cùng dòng, không chỉnh được width/height */
+display: inline-block; /* Nằm cùng dòng, chỉnh được width/height */
+display: flex;         /* Kích hoạt Flexbox */
+display: grid;         /* Kích hoạt CSS Grid */
+display: none;         /* Ẩn phần tử, không chiếm chỗ */
+display: inline-flex;  /* Flexbox nhưng inline */
+display: table;        /* Hiển thị như bảng */
+display: list-item;    /* Hiển thị như item danh sách */
+
+position: static;   /* Mặc định */
+position: relative; /* Tương đối so với vị trí ban đầu */
+position: absolute; /* Tuyệt đối so với phần tử cha có position */
+position: fixed;    /* Cố định khi cuộn */
+position: sticky;   /* Dính khi cuộn đến */
+
+top: 10px; right: 10px; bottom: 10px; left: 10px; /* Khoảng cách định vị */
+
+float: left;   /* Đẩy sang trái */
+float: right;  /* Đẩy sang phải */
+clear: left;   /* Ngăn float trái */
+clear: right;  /* Ngăn float phải */
+clear: both;   /* Ngăn float cả hai bên */
+
+z-index: 1; /* Thứ tự chồng, số lớn ở trên */
+
+/* II. FLEXBOX */
+flex-direction: row;            /* Ngang trái → phải */
+flex-direction: row-reverse;    /* Ngang phải → trái */
+flex-direction: column;         /* Dọc trên → dưới */
+flex-direction: column-reverse; /* Dọc dưới → trên */
+
+flex-wrap: nowrap;       /* Không xuống dòng */
+flex-wrap: wrap;         /* Xuống dòng */
+flex-wrap: wrap-reverse; /* Xuống dòng ngược */
+
+justify-content: flex-start;    /* Gom về đầu trục chính */
+justify-content: flex-end;      /* Gom về cuối trục chính */
+justify-content: center;        /* Căn giữa */
+justify-content: space-between; /* Khoảng cách đều, 2 đầu sát mép */
+justify-content: space-around;  /* Khoảng cách đều, 2 đầu nửa khoảng */
+justify-content: space-evenly;  /* Khoảng cách đều tuyệt đối */
+
+align-items: flex-start; /* Căn lên trên */
+align-items: flex-end;   /* Căn xuống dưới */
+align-items: center;     /* Căn giữa trục phụ */
+align-items: baseline;   /* Căn theo đường chữ */
+align-items: stretch;    /* Kéo giãn */
+
+align-content: flex-start;    /* Gom hàng lên trên */
+align-content: flex-end;      /* Gom hàng xuống dưới */
+align-content: center;        /* Giữa */
+align-content: space-between; /* Khoảng cách đều */
+align-content: space-around;  /* Khoảng cách đều 2 đầu nửa khoảng */
+align-content: space-evenly;  /* Khoảng cách đều tuyệt đối */
+
+flex-grow: 1;   /* Cho phép mở rộng */
+flex-shrink: 0; /* Không co lại */
+flex-basis: 200px; /* Kích thước ban đầu */
+
+/* III. GRID */
+display: grid; /* Bật Grid */
+grid-template-columns: 1fr 1fr 1fr; /* 3 cột bằng nhau */
+grid-template-rows: auto 100px;     /* 2 hàng */
+grid-template-areas: "header header" "main sidebar"; /* Đặt tên vùng */
+grid-column-gap: 20px; /* Khoảng cách cột */
+grid-row-gap: 10px;    /* Khoảng cách hàng */
+grid-column: 1 / 3;    /* Trải dài qua 2 cột */
+grid-row: 1 / 2;       /* Trải dài qua 1 hàng */
+
+/* IV. BOX MODEL */
+width: 200px;   /* Rộng 200px */
+width: 50%;     /* Rộng theo % */
+width: auto;    /* Tự co */
+height: 300px;  /* Cao 300px */
+height: auto;   /* Tự co theo nội dung */
+
+max-width: 100%; /* Không vượt container */
+min-width: 200px;/* Không nhỏ hơn 200px */
+
+margin: 10px;          /* 4 phía 10px */
+margin: 10px 20px;     /* Trên/dưới 10px, trái/phải 20px */
+margin: 10px 20px 30px 40px; /* Trên, phải, dưới, trái */
+margin: auto;          /* Căn giữa ngang */
+
+padding: 15px;         /* 4 phía 15px */
+padding: 10px 20px;    /* Trên/dưới 10px, trái/phải 20px */
+
+border: 2px solid red;   /* Dày 2px, liền, đỏ */
+border-style: dotted;    /* Chấm tròn */
+border-style: dashed;    /* Nét đứt */
+border-style: double;    /* Hai đường */
+border-radius: 10px;     /* Bo góc */
+border-radius: 50%;      /* Bo tròn */
+
+box-sizing: content-box; /* Mặc định */
+box-sizing: border-box;  /* Tính cả padding & border */
+
+/* V. MÀU & NỀN */
+color: red;                /* Màu chữ */
+color: #ff0000;            /* HEX */
+color: rgb(255,0,0);       /* RGB */
+color: rgba(255,0,0,0.5);  /* RGB + trong suốt */
+
+background-color: yellow;        /* Màu nền */
+background-image: url('img.jpg');/* Ảnh nền */
+background-repeat: no-repeat;    /* Không lặp */
+background-position: center;     /* Căn giữa */
+background-size: cover;          /* Phủ kín */
+background-size: contain;        /* Vừa khít */
+background-attachment: fixed;    /* Cố định */
+
+/* VI. VĂN BẢN & FONT */
+font-family: Arial, sans-serif; /* Font */
+font-size: 16px;                /* Cỡ chữ */
+font-size: 1.5em;                /* Gấp 1.5 lần cha */
+font-weight: normal;             /* Bình thường */
+font-weight: bold;               /* Đậm */
+font-weight: 300;                 /* Số từ 100-900 */
+font-style: normal;               /* Mặc định */
+font-style: italic;               /* Nghiêng */
+
+text-align: left;    /* Căn trái */
+text-align: right;   /* Căn phải */
+text-align: center;  /* Căn giữa */
+text-align: justify; /* Canh đều */
+
+text-decoration: none;        /* Không gạch */
+text-decoration: underline;   /* Gạch dưới */
+text-decoration: line-through;/* Gạch ngang */
+
+line-height: 1.5; /* Khoảng cách dòng */
+letter-spacing: 2px; /* Khoảng cách chữ */
+word-spacing: 5px;   /* Khoảng cách từ */
+
+/* VII. HIỆU ỨNG & ANIMATION */
+opacity: 0;   /* Trong suốt */
+opacity: 0.5; /* Trong suốt 50% */
+opacity: 1;   /* Hiển thị */
+
+box-shadow: 2px 4px 6px rgba(0,0,0,0.3); /* Bóng hộp */
+text-shadow: 1px 1px 2px black;          /* Bóng chữ */
+
+transition: all 0.3s ease; /* Chuyển động mượt */
+
+transform: rotate(45deg);     /* Xoay */
+transform: scale(1.2);        /* Phóng to */
+transform: translateX(50px);  /* Dịch ngang */
+
+@keyframes move {
+  from { left: 0; }
+  to { left: 100px; }
+}
+animation: move 2s infinite alternate; /* Chạy keyframe */
