@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* COLUMNS */
+
+body {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Biến các p có trong thành dạng cột */
+.columns {
+    /* column-count: 4; Số cột
+    column-width: 250px; */
+    columns: 4 250px; /* Cho cả 2 cái trên */
+    column-rule: 3px solid #333; /* vạch ngăn cách các cột p | p | p*/ 
+    column-gap: 2rem;
+}
+
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2 {
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    break-inside: avoid; /* lệnh này ngăn câu bị ngắt nửa vời như p1 được 7/10 thì bị sang p2 vd: p1-7 | p1-3 p2 | p3 */
+}
+
+.columns .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
+}
+
+.nowrap {
+    /* Cho phép nguyên một paragraph không bị tách ra khi thu nhỏ hoặc phóng to web */
+    white-space: nowrap;
+}
