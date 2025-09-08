@@ -1,0 +1,71 @@
+/* FLEX */
+/* 
+<body>
+    <main class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </main>
+</body>
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display: flex;
+    gap: 1rem;
+
+    /* Cho các block vào giữa */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; /* Cho phép các thứ ở trong container chỉ ở trong khung của
+    container mà không bị tràn ra ngoài, 
+    nếu k có thì sẽ bị mất đi 1 phần khi thu nhỏ
+    - Hoặc cách sau */
+    flex-flow: row wrap; /*thử nowarp và wrap sẽ thấy sự khác biệt*/
+    align-content: space-evenly;
+}
+
+.box {
+    /* min-width: 100px; */
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    /* Cho các content trong block vào giữa */
+    display: flex;
+    justify-content: center;
+/* 
+    flex-shrink: 1;
+    flex-basis: 250px; chắc là thay thế cho min-width */
+    flex: 1 1 150px;/* grow shrink basis*/
+
+}
+
+.box:nth-child(2) {
+    flex: 2 2 150px;
+    /* flex-grow: 2; */
+    /* flex-shrink: 2 */
+    order: 1; /* -1: đi lên đầu, 0: ở đúng chỗ, 1: đi xuống cuối*/
+}
